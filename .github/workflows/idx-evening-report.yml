@@ -28,6 +28,10 @@ jobs:
           git add data/trading/
           git diff --staged --quiet && exit 0
           git commit -m "IDX evening report [skip ci]"
-          git fetch origin main
-          git rebase origin/main
-          git push origin HEAD:main
+          for i in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main && exit 0
+            sleep $((RANDOM % 5 + 1))
+          done
+          echo "Push failed after retries" && exit 1
