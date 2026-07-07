@@ -33,7 +33,10 @@ with sync_playwright() as p:
     ).new_page()
     print("Buka SiRUP ...")
     page.goto("https://sirup.inaproc.id/sirup/caripaketctr/index", timeout=120000, wait_until="domcontentloaded")
-    page.wait_for_load_state("networkidle", timeout=60000)
+    try:
+        page.wait_for_load_state("networkidle", timeout=60000)
+    except Exception:
+        pass  # lanjut meski belum benar-benar idle; fetch di evaluate() tidak bergantung ini
     print(f"OK — filter bulan: {BULAN_STR}\n")
     for kw in KEYWORDS:
         print(f"Cari: '{kw}' ...", end=" ", flush=True)

@@ -55,7 +55,10 @@ with sync_playwright() as p:
 
     print("Buka SiRUP ...")
     page.goto("https://sirup.inaproc.id/sirup/caripaketctr/index", timeout=40000)
-    page.wait_for_load_state("networkidle", timeout=30000)
+    try:
+        page.wait_for_load_state("networkidle", timeout=45000)
+    except Exception:
+        pass  # lanjut meski belum benar-benar idle; fetch di evaluate() tidak bergantung ini
     print("OK\n")
 
     for kw in KEYWORDS:
