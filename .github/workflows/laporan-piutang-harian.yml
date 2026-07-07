@@ -21,7 +21,6 @@ jobs:
       - name: Run laporan piutang
         env:
           FONNTE_TOKEN: ${{ secrets.FONNTE_TOKEN }}
-          WA_TEST_OVERRIDE: ${{ secrets.WA_TEST_OVERRIDE }}
           ADHITAMA_USERNAME: ${{ secrets.ADHITAMA_USERNAME }}
           ADHITAMA_PASSWORD: ${{ secrets.ADHITAMA_PASSWORD }}
         run: python3 scripts/piutang/piutang.py
