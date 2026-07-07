@@ -1,0 +1,42 @@
+{
+  "date": "2026-07-07",
+  "label": "Selasa 7 Juli 2026",
+  "stocks": [
+    {
+      "kode": "TPIA",
+      "nama": "Chandra Asri Pacific",
+      "tier": "T2",
+      "score": 6,
+      "harga": 1890,
+      "entry_lo": 1850,
+      "entry_hi": 1900,
+      "tp1": 2050,
+      "tp2": 2200,
+      "cl": 1750
+    },
+    {
+      "kode": "ANTM",
+      "nama": "Aneka Tambang",
+      "tier": "T2",
+      "score": 5,
+      "harga": 2950,
+      "entry_lo": 2850,
+      "entry_hi": 2950,
+      "tp1": 3200,
+      "tp2": 3450,
+      "cl": 2750
+    },
+    {
+      "kode": "DEWA",
+      "nama": "Darma Henwa Tbk",
+      "tier": "T3",
+      "score": 4,
+      "harga": 314,
+      "entry_lo": 300,
+      "entry_hi": 300,
+      "tp1": 325,
+      "tp2": 350,
+      "cl": 300
+    }
+  ]
+}
