@@ -19,24 +19,24 @@
       "nama": "Aneka Tambang",
       "tier": "T2",
       "score": 5,
-      "harga": 2950,
+      "harga": 2930,
       "entry_lo": 2850,
       "entry_hi": 2950,
-      "tp1": 3200,
+      "tp1": 3150,
       "tp2": 3450,
-      "cl": 2750
+      "cl": 2700
     },
     {
       "kode": "DEWA",
       "nama": "Darma Henwa Tbk",
       "tier": "T3",
       "score": 4,
-      "harga": 314,
+      "harga": 308,
       "entry_lo": 300,
       "entry_hi": 300,
       "tp1": 325,
       "tp2": 350,
-      "cl": 300
+      "cl": 275
     }
   ]
 }
