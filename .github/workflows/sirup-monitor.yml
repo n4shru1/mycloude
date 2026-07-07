@@ -1,0 +1,35 @@
+name: SiRUP Monitor
+
+# Jadwal identik dengan crontab VPS: 30 0 * * 1 (waktu UTC)
+# Menjalankan 4 script scraping SiRUP berurutan, sama seperti crontab asli.
+on:
+  schedule:
+    - cron: '30 0 * * 1'
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install playwright requests
+      - run: playwright install --with-deps chromium
+      - name: SiRUP Sulsel & Sulbar
+        env:
+          FONNTE_TOKEN: ${{ secrets.FONNTE_TOKEN }}
+        run: python3 scripts/sirup/sirup_sulsel_sulbar.py
+      - name: SiRUP Sulut
+        env:
+          FONNTE_TOKEN: ${{ secrets.FONNTE_TOKEN }}
+        run: python3 scripts/sirup/sirup_monitor_sulut.py
+      - name: SiRUP Ternate
+        env:
+          FONNTE_TOKEN: ${{ secrets.FONNTE_TOKEN }}
+        run: python3 scripts/sirup/sirup_monitor_ternate.py
+      - name: SiRUP Surabaya
+        env:
+          FONNTE_TOKEN: ${{ secrets.FONNTE_TOKEN }}
+        run: python3 scripts/sirup/sirup_surabaya.py

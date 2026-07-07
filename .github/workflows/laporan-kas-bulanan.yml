@@ -1,0 +1,23 @@
+name: Laporan Kas Bulanan
+
+# Jadwal identik dengan crontab VPS: 0 0 2 * * (waktu UTC)
+on:
+  schedule:
+    - cron: '0 0 2 * *'
+  workflow_dispatch:
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests openpyxl
+      - name: Run laporan kas bulanan
+        env:
+          FONNTE_TOKEN: ${{ secrets.FONNTE_TOKEN }}
+          KAS_WA_TARGET: ${{ secrets.KAS_WA_TARGET }}
+          KAS_SPREADSHEET_ID: ${{ secrets.KAS_SPREADSHEET_ID }}
+        run: python3 scripts/kas/kas_otomatis.py

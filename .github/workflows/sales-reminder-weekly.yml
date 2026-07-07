@@ -1,0 +1,28 @@
+name: Sales Reminder - Weekly
+
+# Jadwal identik dengan crontab VPS: 0 0 * * 5 (waktu UTC)
+on:
+  schedule:
+    - cron: '0 0 * * 5'
+  workflow_dispatch:
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests openpyxl
+      - name: Run sales reminder (weekly)
+        env:
+          FONNTE_TOKEN: ${{ secrets.FONNTE_TOKEN }}
+          ADHITAMA_WEB_TOKEN: ${{ secrets.ADHITAMA_WEB_TOKEN }}
+          ONEDRIVE_SURABAYA_MONITORING: ${{ secrets.ONEDRIVE_SURABAYA_MONITORING }}
+          ONEDRIVE_SURABAYA_REKAP: ${{ secrets.ONEDRIVE_SURABAYA_REKAP }}
+          ONEDRIVE_MANADO_MONITORING: ${{ secrets.ONEDRIVE_MANADO_MONITORING }}
+          ONEDRIVE_MANADO_REKAP: ${{ secrets.ONEDRIVE_MANADO_REKAP }}
+          ONEDRIVE_MAKASSAR_MONITORING: ${{ secrets.ONEDRIVE_MAKASSAR_MONITORING }}
+          ONEDRIVE_MAKASSAR_REKAP: ${{ secrets.ONEDRIVE_MAKASSAR_REKAP }}
+        run: python3 scripts/sales/sales_reminder.py weekly

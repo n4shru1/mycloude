@@ -1,0 +1,21 @@
+name: IDX WA Open Posisi
+
+# Jadwal identik dengan crontab VPS: 30 14 * * 1-5 (waktu UTC)
+on:
+  schedule:
+    - cron: '30 14 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - name: Kirim WA open posisi
+        env:
+          FONNTE_TOKEN: ${{ secrets.FONNTE_TOKEN }}
+        run: python3 scripts/trading/wa_open_posisi.py

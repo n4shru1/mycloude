@@ -1,0 +1,32 @@
+name: Sales Reminder - Morning
+
+# Jadwal identik dengan crontab VPS (waktu UTC, WITA = UTC+8):
+#   0 1 * * 1-4  -> Senin-Kamis 09:00 WITA
+#   0 1 * * 6    -> Sabtu 09:00 WITA
+# Catatan: Jumat pagi memang tidak ada di crontab asli (kemungkinan celah, bukan diubah oleh migrasi ini).
+on:
+  schedule:
+    - cron: '0 1 * * 1-4'
+    - cron: '0 1 * * 6'
+  workflow_dispatch:
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests openpyxl
+      - name: Run sales reminder (morning)
+        env:
+          FONNTE_TOKEN: ${{ secrets.FONNTE_TOKEN }}
+          ADHITAMA_WEB_TOKEN: ${{ secrets.ADHITAMA_WEB_TOKEN }}
+          ONEDRIVE_SURABAYA_MONITORING: ${{ secrets.ONEDRIVE_SURABAYA_MONITORING }}
+          ONEDRIVE_SURABAYA_REKAP: ${{ secrets.ONEDRIVE_SURABAYA_REKAP }}
+          ONEDRIVE_MANADO_MONITORING: ${{ secrets.ONEDRIVE_MANADO_MONITORING }}
+          ONEDRIVE_MANADO_REKAP: ${{ secrets.ONEDRIVE_MANADO_REKAP }}
+          ONEDRIVE_MAKASSAR_MONITORING: ${{ secrets.ONEDRIVE_MAKASSAR_MONITORING }}
+          ONEDRIVE_MAKASSAR_REKAP: ${{ secrets.ONEDRIVE_MAKASSAR_REKAP }}
+        run: python3 scripts/sales/sales_reminder.py morning

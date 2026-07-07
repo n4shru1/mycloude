@@ -1,0 +1,23 @@
+name: Update Proyek Ongoing
+
+# Jadwal identik dengan crontab VPS: 5 1 * * 5 (waktu UTC)
+on:
+  schedule:
+    - cron: '5 1 * * 5'
+  workflow_dispatch:
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - name: Run update proyek ongoing
+        env:
+          FONNTE_TOKEN: ${{ secrets.FONNTE_TOKEN }}
+          ADHITAMA_USERNAME: ${{ secrets.ADHITAMA_USERNAME }}
+          ADHITAMA_PASSWORD: ${{ secrets.ADHITAMA_PASSWORD }}
+        run: python3 scripts/proyek/proyek_ongoing.py
