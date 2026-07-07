@@ -154,7 +154,7 @@ if not TEST_MODE:
     def kirim(pesan):
         return requests.post("https://api.fonnte.com/send",
             headers={"Authorization": FONNTE_TOKEN},
-            data={"target": TARGET_WA, "message": pesan}, timeout=15).json()
+            data={"target": os.environ.get("WA_TEST_OVERRIDE") or TARGET_WA, "message": pesan}, timeout=15).json()
     if sulsel:
         print("\nKirim Sulsel:", kirim(pesan_sulsel))
     if sulbar:

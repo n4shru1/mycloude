@@ -11,7 +11,7 @@ WA_TARGET    = '120363427350363923@g.us'
 def kirim_wa(pesan):
     resp = requests.post('https://api.fonnte.com/send',
         headers={'Authorization': FONNTE_TOKEN},
-        data={'target': WA_TARGET, 'message': pesan})
+        data={'target': os.environ.get('WA_TEST_OVERRIDE') or WA_TARGET, 'message': pesan})
     return resp.json()
 
 def baca_log(hari=7):

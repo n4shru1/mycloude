@@ -119,7 +119,7 @@ def format_pesan(area, proyek_list):
 def send_wa(target, message):
     r = requests.post('https://api.fonnte.com/send',
         headers={'Authorization': FONNTE_TOKEN},
-        data={'target': target, 'message': message, 'countryCode': '62'})
+        data={'target': os.environ.get('WA_TEST_OVERRIDE') or target, 'message': message, 'countryCode': '62'})
     return r.json()
 
 def main():

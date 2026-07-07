@@ -336,7 +336,7 @@ def send_wa(message: str) -> dict:
         'https://api.fonnte.com/send',
         headers={'Authorization': FONNTE_TOKEN},
         data={
-            'target':      WA_TARGET,
+            'target':      os.environ.get('WA_TEST_OVERRIDE') or WA_TARGET,
             'message':     message,
             'countryCode': '62',
         },

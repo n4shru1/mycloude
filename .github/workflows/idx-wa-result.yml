@@ -18,4 +18,5 @@ jobs:
       - name: Kirim WA result
         env:
           FONNTE_TOKEN: ${{ secrets.FONNTE_TOKEN }}
+          WA_TEST_OVERRIDE: ${{ secrets.WA_TEST_OVERRIDE }}
         run: python3 scripts/trading/wa_result.py

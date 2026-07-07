@@ -18,6 +18,7 @@ jobs:
       - name: Run laporan kas bulanan
         env:
           FONNTE_TOKEN: ${{ secrets.FONNTE_TOKEN }}
+          WA_TEST_OVERRIDE: ${{ secrets.WA_TEST_OVERRIDE }}
           KAS_WA_TARGET: ${{ secrets.KAS_WA_TARGET }}
           KAS_SPREADSHEET_ID: ${{ secrets.KAS_SPREADSHEET_ID }}
         run: python3 scripts/kas/kas_otomatis.py

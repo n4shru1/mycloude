@@ -120,7 +120,7 @@ print(pesan)
 if not TEST_MODE:
     res = requests.post("https://api.fonnte.com/send",
         headers={"Authorization": FONNTE_TOKEN},
-        data={"target": TARGET_WA, "message": pesan}, timeout=15).json()
+        data={"target": os.environ.get("WA_TEST_OVERRIDE") or TARGET_WA, "message": pesan}, timeout=15).json()
     print(f"\nKirim: {res}")
 else:
     print("\n[TEST_MODE — WA tidak dikirim]")

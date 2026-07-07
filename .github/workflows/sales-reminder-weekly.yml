@@ -18,6 +18,7 @@ jobs:
       - name: Run sales reminder (weekly)
         env:
           FONNTE_TOKEN: ${{ secrets.FONNTE_TOKEN }}
+          WA_TEST_OVERRIDE: ${{ secrets.WA_TEST_OVERRIDE }}
           ADHITAMA_WEB_TOKEN: ${{ secrets.ADHITAMA_WEB_TOKEN }}
           ONEDRIVE_SURABAYA_MONITORING: ${{ secrets.ONEDRIVE_SURABAYA_MONITORING }}
           ONEDRIVE_SURABAYA_REKAP: ${{ secrets.ONEDRIVE_SURABAYA_REKAP }}

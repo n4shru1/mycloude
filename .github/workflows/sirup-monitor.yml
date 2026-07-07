@@ -10,6 +10,9 @@ on:
 jobs:
   run:
     runs-on: ubuntu-latest
+    env:
+      FONNTE_TOKEN: ${{ secrets.FONNTE_TOKEN }}
+      WA_TEST_OVERRIDE: ${{ secrets.WA_TEST_OVERRIDE }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -18,18 +21,10 @@ jobs:
       - run: pip install playwright requests
       - run: playwright install --with-deps chromium
       - name: SiRUP Sulsel & Sulbar
-        env:
-          FONNTE_TOKEN: ${{ secrets.FONNTE_TOKEN }}
         run: python3 scripts/sirup/sirup_sulsel_sulbar.py
       - name: SiRUP Sulut
-        env:
-          FONNTE_TOKEN: ${{ secrets.FONNTE_TOKEN }}
         run: python3 scripts/sirup/sirup_monitor_sulut.py
       - name: SiRUP Ternate
-        env:
-          FONNTE_TOKEN: ${{ secrets.FONNTE_TOKEN }}
         run: python3 scripts/sirup/sirup_monitor_ternate.py
       - name: SiRUP Surabaya
-        env:
-          FONNTE_TOKEN: ${{ secrets.FONNTE_TOKEN }}
         run: python3 scripts/sirup/sirup_surabaya.py
