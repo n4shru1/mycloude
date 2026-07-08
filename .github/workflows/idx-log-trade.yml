@@ -1,9 +1,9 @@
 name: IDX Log Trade
 
-# Jadwal identik dengan crontab VPS: 30 10 * * 1-5 (waktu UTC)
+# ~18:30 WITA Senin-Jumat (waktu UTC). Menit digeser dari :30.
 on:
   schedule:
-    - cron: '30 10 * * 1-5'
+    - cron: '34 10 * * 1-5'
   workflow_dispatch:
 
 permissions:

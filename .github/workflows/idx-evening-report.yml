@@ -1,10 +1,10 @@
 name: IDX Evening Report
 
-# Jadwal identik dengan crontab VPS: 0 10 * * 1-5 (waktu UTC)
+# ~18:00 WITA Senin-Jumat (waktu UTC). Menit digeser dari :00.
 # Murni perhitungan teknikal (yfinance) — tidak butuh AI.
 on:
   schedule:
-    - cron: '0 10 * * 1-5'
+    - cron: '4 10 * * 1-5'
   workflow_dispatch:
 
 permissions:

@@ -1,9 +1,9 @@
 name: Laporan Kas Bulanan
 
-# Jadwal identik dengan crontab VPS: 0 0 2 * * (waktu UTC)
+# ~08:00 WITA tanggal 2 tiap bulan (waktu UTC). Menit digeser dari :00.
 on:
   schedule:
-    - cron: '0 0 2 * *'
+    - cron: '9 0 2 * *'
   workflow_dispatch:
 
 jobs:

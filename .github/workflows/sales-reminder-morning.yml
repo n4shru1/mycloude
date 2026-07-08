@@ -1,13 +1,13 @@
 name: Sales Reminder - Morning
 
-# Jadwal identik dengan crontab VPS (waktu UTC, WITA = UTC+8):
-#   0 1 * * 1-4  -> Senin-Kamis 09:00 WITA
-#   0 1 * * 6    -> Sabtu 09:00 WITA
+# Waktu UTC, WITA = UTC+8. Sekitar 09:00 WITA, Senin-Kamis & Sabtu.
+# Menit digeser dari :00 (bukan angka bulat) sesuai saran GitHub untuk
+# mengurangi antrian di scheduled workflow -- lihat README/riwayat commit.
 # Catatan: Jumat pagi memang tidak ada di crontab asli (kemungkinan celah, bukan diubah oleh migrasi ini).
 on:
   schedule:
-    - cron: '0 1 * * 1-4'
-    - cron: '0 1 * * 6'
+    - cron: '4 1 * * 1-4'
+    - cron: '4 1 * * 6'
   workflow_dispatch:
 
 jobs:

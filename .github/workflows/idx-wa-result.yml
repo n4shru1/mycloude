@@ -1,9 +1,9 @@
 name: IDX WA Result
 
-# Jadwal identik dengan crontab VPS: 0 11 * * 2-6 (waktu UTC)
+# ~19:00 WITA Selasa-Sabtu (waktu UTC). Menit digeser dari :00.
 on:
   schedule:
-    - cron: '0 11 * * 2-6'
+    - cron: '8 11 * * 2-6'
   workflow_dispatch:
 
 jobs:

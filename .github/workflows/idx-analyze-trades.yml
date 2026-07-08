@@ -1,9 +1,9 @@
 name: IDX Analyze Trades
 
-# Jadwal identik dengan crontab VPS: 0 2 * * 6 (waktu UTC)
+# ~10:00 WITA Sabtu (waktu UTC). Menit digeser dari :00.
 on:
   schedule:
-    - cron: '0 2 * * 6'
+    - cron: '11 2 * * 6'
   workflow_dispatch:
 
 jobs:

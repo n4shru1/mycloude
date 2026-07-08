@@ -1,9 +1,9 @@
 name: IDX WA Open Posisi
 
-# Jadwal identik dengan crontab VPS: 30 14 * * 1-5 (waktu UTC)
+# ~22:30 WITA Senin-Jumat (waktu UTC). Menit digeser dari :30.
 on:
   schedule:
-    - cron: '30 14 * * 1-5'
+    - cron: '37 14 * * 1-5'
   workflow_dispatch:
 
 jobs:

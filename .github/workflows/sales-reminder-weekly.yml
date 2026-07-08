@@ -1,9 +1,9 @@
 name: Sales Reminder - Weekly
 
-# Jadwal identik dengan crontab VPS: 0 0 * * 5 (waktu UTC)
+# ~08:00 WITA Sabtu (waktu UTC). Menit digeser dari :00 sesuai saran GitHub.
 on:
   schedule:
-    - cron: '0 0 * * 5'
+    - cron: '7 0 * * 5'
   workflow_dispatch:
 
 jobs:

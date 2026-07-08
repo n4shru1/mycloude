@@ -1,10 +1,10 @@
 name: SiRUP Monitor
 
-# Jadwal identik dengan crontab VPS: 30 0 * * 1 (waktu UTC)
+# ~08:30 WITA Senin (waktu UTC). Menit digeser dari :30.
 # Menjalankan 4 script scraping SiRUP berurutan, sama seperti crontab asli.
 on:
   schedule:
-    - cron: '30 0 * * 1'
+    - cron: '42 0 * * 1'
   workflow_dispatch:
 
 jobs:
