@@ -1,0 +1,30 @@
+{
+  "date": "2026-07-08",
+  "label": "Rabu 8 Juli 2026",
+  "stocks": [
+    {
+      "kode": "TPIA",
+      "nama": "Chandra Asri Pacific",
+      "tier": "T3",
+      "score": 3,
+      "harga": 1785,
+      "entry_lo": 1700,
+      "entry_hi": 1750,
+      "tp1": 1900,
+      "tp2": 2050,
+      "cl": 1650
+    },
+    {
+      "kode": "ANTM",
+      "nama": "Aneka Tambang",
+      "tier": "T3",
+      "score": 3,
+      "harga": 2790,
+      "entry_lo": 2700,
+      "entry_hi": 2750,
+      "tp1": 3000,
+      "tp2": 3200,
+      "cl": 2550
+    }
+  ]
+}
