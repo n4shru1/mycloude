@@ -242,8 +242,14 @@ def get_web_aktivitas(user_id, target_date):
     hasil = []
     try:
         url = WEB_API + "/sales-activities?page=1&limit=200&role_id=1&user_id=" + str(user_id)
-        resp = requests.get(url, headers={"Authorization": WEB_TOKEN}, timeout=15)
+        # Header di-encode manual ke UTF-8 bytes: kalau ADHITAMA_WEB_TOKEN
+        # mengandung karakter non-Latin-1 (mis. secret ke-corrupt), requests
+        # gagal total dengan UnicodeEncodeError sebelum request terkirim.
+        # Dengan bytes eksplisit, request tetap terkirim dan error dari
+        # server (mis. 401) jadi lebih jelas ketimbang codec crash.
+        resp = requests.get(url, headers={"Authorization": WEB_TOKEN.encode("utf-8")}, timeout=15)
         if resp.status_code != 200:
+            print("  [WARN] Web API: HTTP " + str(resp.status_code) + " -- " + resp.text[:200])
             return hasil
         for item in resp.json().get("data", []):
             tgl_str = item.get("tanggal", "")
