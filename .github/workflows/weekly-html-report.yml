@@ -1,9 +1,8 @@
 name: Sales Weekly HTML Report (Telegram)
 
-# ~08:05 WITA Sabtu (waktu UTC). Menit digeser dari :05 -> :14 sesuai saran GitHub.
+# DIMATIKAN: dipindah kembali ke cron VPS (bukan lagi cloud) per keputusan
+# user 2026-07-09. workflow_dispatch tetap aktif untuk tes manual.
 on:
-  schedule:
-    - cron: '14 0 * * 5'
   workflow_dispatch:
 
 jobs:

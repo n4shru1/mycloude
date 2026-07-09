@@ -1,10 +1,8 @@
 name: SiRUP Monitor
 
-# ~08:30 WITA Senin (waktu UTC). Menit digeser dari :30.
-# Menjalankan 4 script scraping SiRUP berurutan, sama seperti crontab asli.
+# DIMATIKAN: dipindah kembali ke cron VPS (bukan lagi cloud) per keputusan
+# user 2026-07-09. workflow_dispatch tetap aktif untuk tes manual.
 on:
-  schedule:
-    - cron: '42 0 * * 1'
   workflow_dispatch:
 
 jobs:

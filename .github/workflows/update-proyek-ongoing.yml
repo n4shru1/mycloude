@@ -1,9 +1,8 @@
 name: Update Proyek Ongoing
 
-# Jadwal identik dengan crontab VPS: 5 1 * * 5 (waktu UTC)
+# DIMATIKAN: dipindah kembali ke cron VPS (bukan lagi cloud) per keputusan
+# user 2026-07-09. workflow_dispatch tetap aktif untuk tes manual.
 on:
-  schedule:
-    - cron: '5 1 * * 5'
   workflow_dispatch:
 
 jobs:

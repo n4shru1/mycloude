@@ -4,9 +4,9 @@ name: Sales Reminder - Morning (Sabtu)
 # Menit digeser dari :00. Dipisah dari sales-reminder-morning.yml karena
 # GitHub Actions tidak reliable menjalankan >1 entry cron dalam satu
 # `schedule:` trigger -- lihat catatan di file tsb.
+# DIMATIKAN: dipindah kembali ke cron VPS (bukan lagi cloud) per keputusan
+# user 2026-07-09. workflow_dispatch tetap aktif untuk tes manual.
 on:
-  schedule:
-    - cron: '4 1 * * 6'
   workflow_dispatch:
 
 jobs:
