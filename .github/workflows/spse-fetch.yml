@@ -1,13 +1,15 @@
 name: SPSE Fetch (Fase 1)
 
-# ~21:32 WITA Senin-Sabtu (waktu UTC), sebelum Routine spse-monitor-harian
-# jalan (~22:06 WITA). spse.inaproc.id memblokir IP cloud Claude (403 dari
-# Cloudflare), tapi tidak memblokir GitHub Actions runner -- jadi scraping
-# murni (tanpa AI) dipindah ke sini. Routine cuma baca hasilnya untuk Fase 2
-# (baca PDF pakai vision) dan Fase 3 (kirim WA).
+# NONAKTIF SEMENTARA (jadwal dimatikan): spse.inaproc.id memblokir semua IP
+# cloud yang dicoba (Anthropic, GitHub Actions polos, GitHub Actions +
+# Playwright/browser asli) dengan 403 dari Cloudflare -- terbukti berbasis
+# reputasi IP/ASN, bukan sesuatu yang bisa diakali dari kode. VPS terbukti
+# tidak diblokir. isb.lkpp.go.id (API resmi lama) bisa diakses tapi minta
+# login akun terdaftar + CAPTCHA, bukan celah gratis.
+# Menunggu keputusan: VPS ringan / proxy residential berbayar / daftar akses
+# resmi ISB ke LKPP. workflow_dispatch tetap aktif untuk tes ulang manual
+# kalau blokirnya suatu saat dicabut atau ada solusi baru.
 on:
-  schedule:
-    - cron: '32 13 * * 1-6'
   workflow_dispatch:
 
 permissions:
@@ -21,37 +23,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install requests pdfminer.six playwright
-      - run: playwright install --with-deps chromium
-      - name: Diagnostic - check spse.inaproc.id via Playwright (bypass Cloudflare JS challenge?)
-        run: |
-          python3 -c "
-          from playwright.sync_api import sync_playwright
-          with sync_playwright() as p:
-              browser = p.chromium.launch()
-              page = browser.new_page()
-              resp = page.goto('https://spse.inaproc.id/', timeout=30000, wait_until='networkidle')
-              print('status:', resp.status if resp else None)
-              print('title:', page.title())
-              print(page.content()[:500])
-              browser.close()
-          "
-      - name: Diagnostic - check spse.inaproc.id reachability (plain curl, for comparison)
-        run: |
-          curl -sS -o /dev/null -w "HTTP %{http_code}\n" https://spse.inaproc.id/ || true
-      - name: Diagnostic - check data.inaproc.id (new INAPROC API Gateway) reachability
-        run: |
-          curl -sS -o /dev/null -w "HTTP %{http_code}\n" https://data.inaproc.id/ || true
-          curl -sS -o /dev/null -w "HTTP %{http_code}\n" https://data.inaproc.id/docs/dokumentasi/guides/migration-from-isb || true
-          curl -sS -o /dev/null -w "HTTP %{http_code}\n" https://isb.lkpp.go.id/isb-2 || true
-      - name: Diagnostic - inspect isb.lkpp.go.id/isb-2 page content
-        run: |
-          curl -sS https://isb.lkpp.go.id/isb-2 | head -c 3000
-          echo ""
-          echo "--- try public tender endpoint without token ---"
-          curl -sS -o /dev/null -w "HTTP %{http_code}\n" "https://isb.lkpp.go.id/isb-2/api/satudata/TenderUmumPublik" || true
-          curl -sS "https://isb.lkpp.go.id/isb-2/api/satudata/TenderUmumPublik" | head -c 1000
-          echo ""
+      - run: pip install requests pdfminer.six
       - name: Fetch SPSE data (Fase 1)
         run: python3 scripts/spse/phase1_fetch.py data/spse/spse_pdf_cache.json data/spse/state.json data/spse/pdfs
       - name: Commit fetched data
