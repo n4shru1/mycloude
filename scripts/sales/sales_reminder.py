@@ -353,27 +353,55 @@ def build_aktivitas_section(cfg, target_date, label_hari):
     return "\n".join(lines)
 
 
-def build_weekly_aktivitas(cfg, senin):
-    HARI_PENDEK = ["Senin ", "Selasa", "Rabu  ", "Kamis ", "Jumat "]
+def build_weekly_aktivitas(cfg, jumat_lalu):
+    """Jumat pekan lalu s/d Kamis pekan ini (6 hari kerja, skip Minggu)."""
+    OFFSETS = [0, 1, 3, 4, 5, 6]
     lines = ["\U0001f4c5 *AKTIVITAS PEKAN INI*", ""]
-    for i in range(5):
-        hari_date = senin + timedelta(days=i)
+    for off in OFFSETS:
+        hari_date = jumat_lalu + timedelta(days=off)
         entries  = get_laporan_harian(BASE_DIR / cfg["monitoring_file"], hari_date, cfg.get("onedrive_monitoring"))
         web_acts = get_web_aktivitas(cfg["web_user_id"], hari_date)
-        knj_count = len([e for e in entries if e.get("customer")])
-        fu_count  = len([e for e in entries if e.get("followup")])
-        boq_count = len([e for e in entries if e.get("quo_baru")])
-        web_ada   = any(a["ada_foto"] for a in web_acts) if web_acts else False
-        web_icon  = "✅" if web_ada else "❌"
+
+        hari_nama = id_date("%A", datetime.combine(hari_date, datetime.min.time()))
         tgl_str   = hari_date.strftime("%d/%m")
-        lines.append(
-            HARI_PENDEK[i] + " (" + tgl_str + ")  "
-            "Knj: *" + str(knj_count) + "*  "
-            "FU: *" + str(fu_count) + "*  "
-            "New: *" + str(boq_count) + "*  "
-            "Web: " + web_icon
-        )
-    return "\n".join(lines)
+        lines.append("*" + hari_nama + " (" + tgl_str + ")*")
+
+        kunjungan = [e for e in entries if e.get("customer")]
+        if kunjungan:
+            lines.append("\U0001f6b6 Kunjungan:")
+            for e in kunjungan:
+                lines.append("  • " + e["customer"][:50])
+        else:
+            lines.append("\U0001f6b6 Kunjungan: _(tidak ada)_")
+
+        fu_list = [e for e in entries if e.get("followup")]
+        if fu_list:
+            lines.append("\U0001f4cc FU Quo:")
+            for e in fu_list:
+                lines.append("  • " + e["followup"][:50] + fmt_nilai(e.get("nilai")))
+        else:
+            lines.append("\U0001f4cc FU Quo: _(tidak ada)_")
+
+        boq_list = [e for e in entries if e.get("quo_baru")]
+        if boq_list:
+            lines.append("\U0001f4dd New Quo:")
+            for e in boq_list:
+                lines.append("  • " + e["quo_baru"][:50] + fmt_nilai(e.get("nilai")))
+        else:
+            lines.append("\U0001f4dd New Quo: _(tidak ada)_")
+
+        if web_acts:
+            dengan_foto = [a for a in web_acts if a["ada_foto"]]
+            web_icon = "✅" if len(dengan_foto) == len(web_acts) else "⚠️"
+            lines.append("\U0001f4f1 Web: " + web_icon)
+            for a in web_acts:
+                foto_ket = "✅ ada foto" if a["ada_foto"] else "⚠️ tanpa foto"
+                lines.append("  • " + (a["judul"] or "-")[:50] + " -- " + foto_ket)
+        else:
+            lines.append("\U0001f4f1 Web: ❌ _(tidak ada)_")
+
+        lines.append("")
+    return "\n".join(lines).rstrip()
 
 
 def msg_morning(kota, cfg):
@@ -424,8 +452,8 @@ def msg_weekly(kota, cfg):
     pipeline = get_pipeline(BASE_DIR / cfg["rekap_file"], cfg.get("onedrive_rekap"))
     bulan    = id_date("%B %Y")
 
-    today = date.today()
-    senin = today - timedelta(days=(today.weekday() if today.weekday() < 5 else 5))
+    today      = date.today()
+    jumat_lalu = today - timedelta(days=7)
 
     win_bi   = pipeline["win_bulan_ini"]
     win_line = "✅ *" + str(win_bi) + " WIN* bulan ini" if win_bi else "❌ *Belum ada WIN* bulan ini"
@@ -450,19 +478,24 @@ def msg_weekly(kota, cfg):
         for p in pipeline["etd_terlewat"][:5]:
             overdue_block += "  - [" + p["stage"] + "] " + p["nama"] + " (sejak " + p["etd"] + ")\n"
 
-    aktivitas_sec = build_weekly_aktivitas(cfg, senin)
+    aktivitas_sec = build_weekly_aktivitas(cfg, jumat_lalu)
 
-    return (
-        "\U0001f4ca *REKAP MINGGUAN -- " + kota.upper() + "*\n"
-        "_" + bulan + "_\n\n"
+    pipeline_sec = (
+        "\U0001f4ca *Ringkasan Pipeline*\n\n"
         + win_line + "\n"
         "\U0001f4e6 Total aktif: *" + str(pipeline["total_aktif"]) + " proyek*\n\n"
         "*Pipeline per stage:*\n"
         + stage_lines
         + etd_block
         + overdue_block
-        + "\n--------------------\n"
-        + aktivitas_sec + "\n\n"
+    ).rstrip()
+
+    return (
+        "\U0001f4ca *REKAP MINGGUAN -- " + kota.upper() + "*\n"
+        "_" + bulan + "_\n\n"
+        + aktivitas_sec + "\n"
+        "\n--------------------\n"
+        + pipeline_sec + "\n\n"
         "_Terima kasih! \U0001f64f_"
         + SUMBER_DATA
     ).strip()
