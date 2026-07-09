@@ -1,0 +1,12 @@
+{
+  "findings_done": {
+    "Makassar": {},
+    "Manado": {},
+    "Surabaya": {}
+  },
+  "vision_queue": [],
+  "cache_hits": 0,
+  "cache_new": 0,
+  "tanggal": "09 July 2026",
+  "cache_file": "data/spse/spse_pdf_cache.json"
+}
