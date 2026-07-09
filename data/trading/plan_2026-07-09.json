@@ -1,0 +1,42 @@
+{
+  "date": "2026-07-09",
+  "label": "Kamis 9 Juli 2026",
+  "stocks": [
+    {
+      "kode": "DEWA",
+      "nama": "Darma Henwa Tbk",
+      "tier": "T1",
+      "score": 7,
+      "harga": 332,
+      "entry_lo": 325,
+      "entry_hi": 325,
+      "tp1": 350,
+      "tp2": 375,
+      "cl": 300
+    },
+    {
+      "kode": "BUMI",
+      "nama": "Bumi Resources Tbk",
+      "tier": "T3",
+      "score": 4,
+      "harga": 141,
+      "entry_lo": 140,
+      "entry_hi": 140,
+      "tp1": 150,
+      "tp2": 160,
+      "cl": 130
+    },
+    {
+      "kode": "ANTM",
+      "nama": "Aneka Tambang",
+      "tier": "T3",
+      "score": 3,
+      "harga": 2850,
+      "entry_lo": 2750,
+      "entry_hi": 2800,
+      "tp1": 3050,
+      "tp2": 3250,
+      "cl": 2600
+    }
+  ]
+}
