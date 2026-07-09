@@ -452,8 +452,12 @@ def msg_weekly(kota, cfg):
     pipeline = get_pipeline(BASE_DIR / cfg["rekap_file"], cfg.get("onedrive_rekap"))
     bulan    = id_date("%B %Y")
 
-    today      = date.today()
-    jumat_lalu = today - timedelta(days=7)
+    today = date.today()
+    # Berpatok ke Jumat asli terdekat (bukan cuma today - 7) supaya tetap benar
+    # kalau script dijalankan manual di hari selain Jumat (mis. workflow_dispatch).
+    hari_sejak_jumat = (today.weekday() - 4) % 7  # Jumat = weekday() 4
+    jumat_ini  = today - timedelta(days=hari_sejak_jumat)
+    jumat_lalu = jumat_ini - timedelta(days=7)
 
     win_bi   = pipeline["win_bulan_ini"]
     win_line = "✅ *" + str(win_bi) + " WIN* bulan ini" if win_bi else "❌ *Belum ada WIN* bulan ini"

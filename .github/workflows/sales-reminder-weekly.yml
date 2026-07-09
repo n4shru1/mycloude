@@ -1,9 +1,9 @@
 name: Sales Reminder - Weekly
 
-# ~08:00 WITA Sabtu (waktu UTC). Menit digeser dari :00 sesuai saran GitHub.
+# 08:05 WITA Jumat (waktu UTC).
 on:
   schedule:
-    - cron: '7 0 * * 5'
+    - cron: '5 0 * * 5'
   workflow_dispatch:
 
 jobs:
