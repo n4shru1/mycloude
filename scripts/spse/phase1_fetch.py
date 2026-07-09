@@ -12,11 +12,12 @@ try:
 except ImportError:
     PDF_OK = False
 
-BASE_URL  = "https://spse.inaproc.id"
-NETLIFY   = "https://curious-moonbeam-ce5386.netlify.app"
+BASE_URL   = "https://spse.inaproc.id"
+NETLIFY    = "https://curious-moonbeam-ce5386.netlify.app"
 CACHE_FILE = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("/tmp/spse_pdf_cache.json")
-PDF_DIR   = Path("/tmp/spse_pdfs")
-PDF_DIR.mkdir(exist_ok=True)
+STATE_FILE = Path(sys.argv[2]) if len(sys.argv) > 2 else Path("/tmp/spse_state.json")
+PDF_DIR    = Path(sys.argv[3]) if len(sys.argv) > 3 else Path("/tmp/spse_pdfs")
+PDF_DIR.mkdir(parents=True, exist_ok=True)
 
 session = requests.Session()
 session.headers.update({"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"})
@@ -300,7 +301,8 @@ for nama, path, grup, p, h, s, k, ptype, kat in all_rows:
             'pdf_note':''
         })
 
-Path('/tmp/spse_state.json').write_text(json.dumps({
+STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
+STATE_FILE.write_text(json.dumps({
     'findings_done':findings_done,'vision_queue':vision_queue,
     'cache_hits':cache_hits,'cache_new':cache_new,
     'tanggal':datetime.now().strftime('%d %B %Y'),

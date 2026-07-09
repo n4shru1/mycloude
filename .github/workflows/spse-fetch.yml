@@ -1,0 +1,40 @@
+name: SPSE Fetch (Fase 1)
+
+# ~21:32 WITA Senin-Sabtu (waktu UTC), sebelum Routine spse-monitor-harian
+# jalan (~22:06 WITA). spse.inaproc.id memblokir IP cloud Claude (403 dari
+# Cloudflare), tapi tidak memblokir GitHub Actions runner -- jadi scraping
+# murni (tanpa AI) dipindah ke sini. Routine cuma baca hasilnya untuk Fase 2
+# (baca PDF pakai vision) dan Fase 3 (kirim WA).
+on:
+  schedule:
+    - cron: '32 13 * * 1-6'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests pdfminer.six
+      - name: Fetch SPSE data (Fase 1)
+        run: python3 scripts/spse/phase1_fetch.py data/spse/spse_pdf_cache.json data/spse/state.json data/spse/pdfs
+      - name: Commit fetched data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/spse/spse_pdf_cache.json data/spse/state.json data/spse/pdfs
+          git diff --staged --quiet && exit 0
+          git commit -m "SPSE fetch: update cache + state [skip ci]"
+          for i in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main && exit 0
+            sleep $((RANDOM % 5 + 1))
+          done
+          echo "Push failed after retries" && exit 1

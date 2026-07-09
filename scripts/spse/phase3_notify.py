@@ -1,8 +1,11 @@
 import os
+import sys
 import requests, json
 from pathlib import Path
 
 FONNTE_TOKEN = os.environ["FONNTE_TOKEN"]
+STATE_FILE_ARG = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("/tmp/spse_state.json")
+VISION_RESULTS_ARG = Path(sys.argv[2]) if len(sys.argv) > 2 else Path("/tmp/spse_vision_results.json")
 WA_GROUPS = {
     "Makassar": "120363406350666051@g.us",
     "Manado":   "120363402270321041@g.us",
@@ -28,12 +31,12 @@ LPSE_ORDER = [
 ]
 order_map = {n: i for i,n in enumerate(LPSE_ORDER)}
 
-state = json.loads(Path('/tmp/spse_state.json').read_text())
+state = json.loads(STATE_FILE_ARG.read_text())
 findings  = state['findings_done']
 cache_file = Path(state['cache_file'])
 tanggal   = state['tanggal']
 
-vision_results_path = Path('/tmp/spse_vision_results.json')
+vision_results_path = VISION_RESULTS_ARG
 if vision_results_path.exists():
     vision_results = json.loads(vision_results_path.read_text())
     try: cache = json.loads(cache_file.read_text(encoding='utf-8'))
