@@ -39,6 +39,11 @@ jobs:
       - name: Diagnostic - check spse.inaproc.id reachability (plain curl, for comparison)
         run: |
           curl -sS -o /dev/null -w "HTTP %{http_code}\n" https://spse.inaproc.id/ || true
+      - name: Diagnostic - check data.inaproc.id (new INAPROC API Gateway) reachability
+        run: |
+          curl -sS -o /dev/null -w "HTTP %{http_code}\n" https://data.inaproc.id/ || true
+          curl -sS -o /dev/null -w "HTTP %{http_code}\n" https://data.inaproc.id/docs/dokumentasi/guides/migration-from-isb || true
+          curl -sS -o /dev/null -w "HTTP %{http_code}\n" https://isb.lkpp.go.id/isb-2 || true
       - name: Fetch SPSE data (Fase 1)
         run: python3 scripts/spse/phase1_fetch.py data/spse/spse_pdf_cache.json data/spse/state.json data/spse/pdfs
       - name: Commit fetched data
