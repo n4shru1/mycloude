@@ -22,6 +22,10 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install requests pdfminer.six
+      - name: Diagnostic - check spse.inaproc.id reachability
+        run: |
+          curl -sS -o /dev/null -w "HTTP %{http_code}\n" https://spse.inaproc.id/ || true
+          curl -sS -I https://spse.inaproc.id/ | head -20 || true
       - name: Fetch SPSE data (Fase 1)
         run: python3 scripts/spse/phase1_fetch.py data/spse/spse_pdf_cache.json data/spse/state.json data/spse/pdfs
       - name: Commit fetched data

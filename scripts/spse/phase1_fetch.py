@@ -301,6 +301,8 @@ for nama, path, grup, p, h, s, k, ptype, kat in all_rows:
             'pdf_note':''
         })
 
+save_cache(pdf_cache)  # pastikan cache selalu ditulis, walau kosong (git add butuh file ada)
+
 STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
 STATE_FILE.write_text(json.dumps({
     'findings_done':findings_done,'vision_queue':vision_queue,
