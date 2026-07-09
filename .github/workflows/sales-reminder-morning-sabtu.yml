@@ -1,17 +1,12 @@
-name: Sales Reminder - Morning
+name: Sales Reminder - Morning (Sabtu)
 
-# Waktu UTC, WITA = UTC+8. Sekitar 09:00 WITA, Senin-Kamis.
-# Menit digeser dari :00 (bukan angka bulat) sesuai saran GitHub untuk
-# mengurangi antrian di scheduled workflow -- lihat README/riwayat commit.
-# Sabtu dipisah ke sales-reminder-morning-sabtu.yml: GitHub Actions
-# terbukti tidak reliable menjalankan >1 entry cron dalam satu
-# `schedule:` (workflow ini tidak pernah jalan sekali pun otomatis
-# selama punya 2 entry cron, padahal workflow lain dgn 1 entry cron
-# jalan normal). Satu file = satu cron entry.
-# Catatan: Jumat pagi memang tidak ada di crontab asli (kemungkinan celah, bukan diubah oleh migrasi ini).
+# Waktu UTC, WITA = UTC+8. Sekitar 09:00 WITA, Sabtu.
+# Menit digeser dari :00. Dipisah dari sales-reminder-morning.yml karena
+# GitHub Actions tidak reliable menjalankan >1 entry cron dalam satu
+# `schedule:` trigger -- lihat catatan di file tsb.
 on:
   schedule:
-    - cron: '4 1 * * 1-4'
+    - cron: '4 1 * * 6'
   workflow_dispatch:
 
 jobs:
