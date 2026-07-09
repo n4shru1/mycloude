@@ -21,11 +21,24 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: pip install requests pdfminer.six
-      - name: Diagnostic - check spse.inaproc.id reachability
+      - run: pip install requests pdfminer.six playwright
+      - run: playwright install --with-deps chromium
+      - name: Diagnostic - check spse.inaproc.id via Playwright (bypass Cloudflare JS challenge?)
+        run: |
+          python3 -c "
+          from playwright.sync_api import sync_playwright
+          with sync_playwright() as p:
+              browser = p.chromium.launch()
+              page = browser.new_page()
+              resp = page.goto('https://spse.inaproc.id/', timeout=30000, wait_until='networkidle')
+              print('status:', resp.status if resp else None)
+              print('title:', page.title())
+              print(page.content()[:500])
+              browser.close()
+          "
+      - name: Diagnostic - check spse.inaproc.id reachability (plain curl, for comparison)
         run: |
           curl -sS -o /dev/null -w "HTTP %{http_code}\n" https://spse.inaproc.id/ || true
-          curl -sS -I https://spse.inaproc.id/ | head -20 || true
       - name: Fetch SPSE data (Fase 1)
         run: python3 scripts/spse/phase1_fetch.py data/spse/spse_pdf_cache.json data/spse/state.json data/spse/pdfs
       - name: Commit fetched data
