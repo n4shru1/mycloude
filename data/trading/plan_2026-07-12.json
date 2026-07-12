@@ -1,0 +1,42 @@
+{
+  "date": "2026-07-12",
+  "label": "Minggu 12 Juli 2026",
+  "stocks": [
+    {
+      "kode": "DEWA",
+      "nama": "Darma Henwa Tbk",
+      "tier": "T2",
+      "score": 6,
+      "harga": 338,
+      "entry_lo": 325,
+      "entry_hi": 350,
+      "tp1": 375,
+      "tp2": 400,
+      "cl": 325
+    },
+    {
+      "kode": "ADMR",
+      "nama": "Alamtri Minerals",
+      "tier": "T2",
+      "score": 5,
+      "harga": 1450,
+      "entry_lo": 1400,
+      "entry_hi": 1450,
+      "tp1": 1550,
+      "tp2": 1700,
+      "cl": 1350
+    },
+    {
+      "kode": "TLKM",
+      "nama": "Telkom Indonesia",
+      "tier": "T3",
+      "score": 4,
+      "harga": 2480,
+      "entry_lo": 2400,
+      "entry_hi": 2450,
+      "tp1": 2650,
+      "tp2": 2850,
+      "cl": 2300
+    }
+  ]
+}
