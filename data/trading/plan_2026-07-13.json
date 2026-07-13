@@ -1,0 +1,42 @@
+{
+  "date": "2026-07-13",
+  "label": "Senin 13 Juli 2026",
+  "stocks": [
+    {
+      "kode": "BIPI",
+      "nama": "Hindia Energi Tbk",
+      "tier": "T1",
+      "score": 7,
+      "harga": 135,
+      "entry_lo": 130,
+      "entry_hi": 140,
+      "tp1": 150,
+      "tp2": 160,
+      "cl": 130
+    },
+    {
+      "kode": "ADMR",
+      "nama": "Alamtri Minerals",
+      "tier": "T2",
+      "score": 6,
+      "harga": 1500,
+      "entry_lo": 1450,
+      "entry_hi": 1500,
+      "tp1": 1600,
+      "tp2": 1750,
+      "cl": 1400
+    },
+    {
+      "kode": "ANTM",
+      "nama": "Aneka Tambang",
+      "tier": "T2",
+      "score": 6,
+      "harga": 2920,
+      "entry_lo": 2850,
+      "entry_hi": 2900,
+      "tp1": 3150,
+      "tp2": 3400,
+      "cl": 2700
+    }
+  ]
+}
