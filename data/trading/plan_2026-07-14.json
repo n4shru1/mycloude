@@ -1,0 +1,42 @@
+{
+  "date": "2026-07-14",
+  "label": "Selasa 14 Juli 2026",
+  "stocks": [
+    {
+      "kode": "TPIA",
+      "nama": "Chandra Asri Pacific",
+      "tier": "T1",
+      "score": 8,
+      "harga": 1880,
+      "entry_lo": 1800,
+      "entry_hi": 1900,
+      "tp1": 2050,
+      "tp2": 2200,
+      "cl": 1750
+    },
+    {
+      "kode": "BUMI",
+      "nama": "Bumi Resources Tbk",
+      "tier": "T1",
+      "score": 8,
+      "harga": 149,
+      "entry_lo": 140,
+      "entry_hi": 150,
+      "tp1": 160,
+      "tp2": 170,
+      "cl": 140
+    },
+    {
+      "kode": "BIPI",
+      "nama": "Hindia Energi Tbk",
+      "tier": "T1",
+      "score": 8,
+      "harga": 146,
+      "entry_lo": 140,
+      "entry_hi": 150,
+      "tp1": 160,
+      "tp2": 170,
+      "cl": 140
+    }
+  ]
+}
