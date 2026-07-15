@@ -1,0 +1,42 @@
+{
+  "date": "2026-07-15",
+  "label": "Rabu 15 Juli 2026",
+  "stocks": [
+    {
+      "kode": "ANTM",
+      "nama": "Aneka Tambang",
+      "tier": "T1",
+      "score": 8,
+      "harga": 3040,
+      "entry_lo": 2950,
+      "entry_hi": 3050,
+      "tp1": 3300,
+      "tp2": 3550,
+      "cl": 2850
+    },
+    {
+      "kode": "ASPR",
+      "nama": "Asia Pramulia Tbk",
+      "tier": "T1",
+      "score": 8,
+      "harga": 162,
+      "entry_lo": 160,
+      "entry_hi": 160,
+      "tp1": 170,
+      "tp2": 190,
+      "cl": 150
+    },
+    {
+      "kode": "DEWA",
+      "nama": "Darma Henwa Tbk",
+      "tier": "T2",
+      "score": 6,
+      "harga": 362,
+      "entry_lo": 350,
+      "entry_hi": 350,
+      "tp1": 400,
+      "tp2": 425,
+      "cl": 325
+    }
+  ]
+}
