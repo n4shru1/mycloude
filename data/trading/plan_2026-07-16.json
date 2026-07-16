@@ -1,0 +1,42 @@
+{
+  "date": "2026-07-16",
+  "label": "Kamis 16 Juli 2026",
+  "stocks": [
+    {
+      "kode": "ADMR",
+      "nama": "Alamtri Minerals",
+      "tier": "T1",
+      "score": 7,
+      "harga": 1530,
+      "entry_lo": 1500,
+      "entry_hi": 1550,
+      "tp1": 1650,
+      "tp2": 1750,
+      "cl": 1450
+    },
+    {
+      "kode": "ANTM",
+      "nama": "Aneka Tambang",
+      "tier": "T1",
+      "score": 7,
+      "harga": 3080,
+      "entry_lo": 3000,
+      "entry_hi": 3100,
+      "tp1": 3350,
+      "tp2": 3550,
+      "cl": 2900
+    },
+    {
+      "kode": "DEWA",
+      "nama": "Darma Henwa Tbk",
+      "tier": "T2",
+      "score": 6,
+      "harga": 370,
+      "entry_lo": 350,
+      "entry_hi": 375,
+      "tp1": 400,
+      "tp2": 425,
+      "cl": 350
+    }
+  ]
+}
