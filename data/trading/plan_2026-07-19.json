@@ -1,0 +1,42 @@
+{
+  "date": "2026-07-19",
+  "label": "Minggu 19 Juli 2026",
+  "stocks": [
+    {
+      "kode": "ADMR",
+      "nama": "Alamtri Minerals",
+      "tier": "T2",
+      "score": 6,
+      "harga": 1530,
+      "entry_lo": 1500,
+      "entry_hi": 1550,
+      "tp1": 1650,
+      "tp2": 1800,
+      "cl": 1400
+    },
+    {
+      "kode": "ANTM",
+      "nama": "Aneka Tambang",
+      "tier": "T2",
+      "score": 6,
+      "harga": 3070,
+      "entry_lo": 3000,
+      "entry_hi": 3050,
+      "tp1": 3300,
+      "tp2": 3600,
+      "cl": 2850
+    },
+    {
+      "kode": "TLKM",
+      "nama": "Telkom Indonesia",
+      "tier": "T2",
+      "score": 6,
+      "harga": 2660,
+      "entry_lo": 2600,
+      "entry_hi": 2650,
+      "tp1": 2850,
+      "tp2": 3100,
+      "cl": 2450
+    }
+  ]
+}
