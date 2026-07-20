@@ -1,0 +1,42 @@
+{
+  "date": "2026-07-20",
+  "label": "Senin 20 Juli 2026",
+  "stocks": [
+    {
+      "kode": "TPIA",
+      "nama": "Chandra Asri Pacific",
+      "tier": "T1",
+      "score": 7,
+      "harga": 2120,
+      "entry_lo": 2050,
+      "entry_hi": 2100,
+      "tp1": 2300,
+      "tp2": 2450,
+      "cl": 2000
+    },
+    {
+      "kode": "TLKM",
+      "nama": "Telkom Indonesia",
+      "tier": "T1",
+      "score": 7,
+      "harga": 2710,
+      "entry_lo": 2650,
+      "entry_hi": 2700,
+      "tp1": 2950,
+      "tp2": 3150,
+      "cl": 2550
+    },
+    {
+      "kode": "DEWA",
+      "nama": "Darma Henwa Tbk",
+      "tier": "T2",
+      "score": 6,
+      "harga": 398,
+      "entry_lo": 375,
+      "entry_hi": 400,
+      "tp1": 425,
+      "tp2": 475,
+      "cl": 375
+    }
+  ]
+}
