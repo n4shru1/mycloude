@@ -34,3 +34,6 @@ tanggal,kode,nama,tier,score,entry,tp1,tp2,cl,close,high,status,pnl_pct,max_pnl_
 2026-07-22,TPIA,Chandra Asri Pacific,T1,8,2200,2450,2600,2100,2280,2350,TRAIL,3.64,6.82,2
 2026-07-22,BUMI,Bumi Resources Tbk,T1,8,160,180,190,160,168,170,TRAIL,5.0,6.25,2
 2026-07-22,CUAN,Petrindo Jaya Kreasi,T1,8,700,800,850,700,720,755,TRAIL,2.86,7.86,2
+2026-07-23,CUAN,Petrindo Jaya Kreasi,T1,7,700,800,850,650,755,825,TRAIL,7.86,17.86,2
+2026-07-23,BUMI,Bumi Resources Tbk,T2,6,160,180,200,160,183,196,WIN,14.37,22.5,2
+2026-07-23,TPIA,Chandra Asri Pacific,T2,5,2200,2450,2650,2100,2170,2370,TRAIL,-1.36,7.73,2
