@@ -1,0 +1,42 @@
+{
+  "date": "2026-07-23",
+  "label": "Kamis 23 Juli 2026",
+  "stocks": [
+    {
+      "kode": "BIPI",
+      "nama": "Hindia Energi Tbk",
+      "tier": "T1",
+      "score": 7,
+      "harga": 164,
+      "entry_lo": 160,
+      "entry_hi": 160,
+      "tp1": 180,
+      "tp2": 190,
+      "cl": 150
+    },
+    {
+      "kode": "CUAN",
+      "nama": "Petrindo Jaya Kreasi",
+      "tier": "T1",
+      "score": 7,
+      "harga": 755,
+      "entry_lo": 750,
+      "entry_hi": 750,
+      "tp1": 800,
+      "tp2": 900,
+      "cl": 700
+    },
+    {
+      "kode": "TPIA",
+      "nama": "Chandra Asri Pacific",
+      "tier": "T2",
+      "score": 6,
+      "harga": 2170,
+      "entry_lo": 2100,
+      "entry_hi": 2150,
+      "tp1": 2350,
+      "tp2": 2550,
+      "cl": 2000
+    }
+  ]
+}
