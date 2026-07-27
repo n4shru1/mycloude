@@ -40,3 +40,6 @@ tanggal,kode,nama,tier,score,entry,tp1,tp2,cl,close,high,status,pnl_pct,max_pnl_
 2026-07-24,BIPI,Hindia Energi Tbk,T1,7,160,180,190,150,152,165,TRAIL,-5.0,3.12,2
 2026-07-24,CUAN,Petrindo Jaya Kreasi,T1,7,750,800,900,700,700,755,LOSS,-6.67,0.67,2
 2026-07-24,TPIA,Chandra Asri Pacific,T2,6,2100,2350,2550,2000,2100,2140,HOLD,0.0,1.9,2
+2026-07-27,BUMI,Bumi Resources Tbk,T2,6,170,180,200,160,170,176,TRAIL,0.0,3.53,2
+2026-07-27,DEWA,Darma Henwa Tbk,T2,5,425,475,525,400,442,456,TRAIL,4.0,7.29,2
+2026-07-27,ASPR,Asia Pramulia Tbk,T2,5,150,160,180,140,145,153,HOLD,-3.33,2.0,2
