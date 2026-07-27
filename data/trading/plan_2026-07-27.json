@@ -1,0 +1,42 @@
+{
+  "date": "2026-07-27",
+  "label": "Senin 27 Juli 2026",
+  "stocks": [
+    {
+      "kode": "BUMI",
+      "nama": "Bumi Resources Tbk",
+      "tier": "T2",
+      "score": 5,
+      "harga": 170,
+      "entry_lo": 160,
+      "entry_hi": 170,
+      "tp1": 180,
+      "tp2": 200,
+      "cl": 160
+    },
+    {
+      "kode": "TPIA",
+      "nama": "Chandra Asri Pacific",
+      "tier": "T3",
+      "score": 4,
+      "harga": 2090,
+      "entry_lo": 2000,
+      "entry_hi": 2050,
+      "tp1": 2250,
+      "tp2": 2400,
+      "cl": 1900
+    },
+    {
+      "kode": "DEWA",
+      "nama": "Darma Henwa Tbk",
+      "tier": "T3",
+      "score": 4,
+      "harga": 442,
+      "entry_lo": 425,
+      "entry_hi": 450,
+      "tp1": 475,
+      "tp2": 500,
+      "cl": 400
+    }
+  ]
+}
