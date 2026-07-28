@@ -1,0 +1,42 @@
+{
+  "date": "2026-07-28",
+  "label": "Selasa 28 Juli 2026",
+  "stocks": [
+    {
+      "kode": "TPIA",
+      "nama": "Chandra Asri Pacific",
+      "tier": "T3",
+      "score": 4,
+      "harga": 2090,
+      "entry_lo": 2000,
+      "entry_hi": 2050,
+      "tp1": 2250,
+      "tp2": 2400,
+      "cl": 1900
+    },
+    {
+      "kode": "BUMI",
+      "nama": "Bumi Resources Tbk",
+      "tier": "T3",
+      "score": 4,
+      "harga": 165,
+      "entry_lo": 160,
+      "entry_hi": 160,
+      "tp1": 180,
+      "tp2": 190,
+      "cl": 150
+    },
+    {
+      "kode": "CUAN",
+      "nama": "Petrindo Jaya Kreasi",
+      "tier": "T3",
+      "score": 4,
+      "harga": 670,
+      "entry_lo": 650,
+      "entry_hi": 650,
+      "tp1": 700,
+      "tp2": 750,
+      "cl": 600
+    }
+  ]
+}
