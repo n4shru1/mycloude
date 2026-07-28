@@ -43,3 +43,6 @@ tanggal,kode,nama,tier,score,entry,tp1,tp2,cl,close,high,status,pnl_pct,max_pnl_
 2026-07-27,BUMI,Bumi Resources Tbk,T2,6,170,180,200,160,170,176,TRAIL,0.0,3.53,2
 2026-07-27,DEWA,Darma Henwa Tbk,T2,5,425,475,525,400,442,456,TRAIL,4.0,7.29,2
 2026-07-27,ASPR,Asia Pramulia Tbk,T2,5,150,160,180,140,145,153,HOLD,-3.33,2.0,2
+2026-07-28,BUMI,Bumi Resources Tbk,T2,5,160,180,200,160,165,173,TRAIL,3.12,8.12,2
+2026-07-28,TPIA,Chandra Asri Pacific,T3,4,2000,2250,2400,1900,2090,2150,TRAIL,4.5,7.5,2
+2026-07-28,DEWA,Darma Henwa Tbk,T3,4,425,475,500,400,444,456,TRAIL,4.47,7.29,2
