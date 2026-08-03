@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-03",
+  "label": "Senin 3 Agustus 2026",
+  "stocks": [
+    {
+      "kode": "ADMR",
+      "nama": "Alamtri Minerals",
+      "tier": "T1",
+      "score": 7,
+      "harga": 1515,
+      "entry_lo": 1450,
+      "entry_hi": 1500,
+      "tp1": 1650,
+      "tp2": 1750,
+      "cl": 1400
+    },
+    {
+      "kode": "TLKM",
+      "nama": "Telkom Indonesia",
+      "tier": "T1",
+      "score": 7,
+      "harga": 2630,
+      "entry_lo": 2550,
+      "entry_hi": 2650,
+      "tp1": 2850,
+      "tp2": 3050,
+      "cl": 2450
+    },
+    {
+      "kode": "TPIA",
+      "nama": "Chandra Asri Pacific",
+      "tier": "T2",
+      "score": 6,
+      "harga": 2160,
+      "entry_lo": 2100,
+      "entry_hi": 2150,
+      "tp1": 2350,
+      "tp2": 2550,
+      "cl": 2000
+    }
+  ]
+}
