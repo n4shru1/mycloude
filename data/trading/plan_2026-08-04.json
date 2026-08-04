@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-04",
+  "label": "Selasa 4 Agustus 2026",
+  "stocks": [
+    {
+      "kode": "ADMR",
+      "nama": "Alamtri Minerals",
+      "tier": "T1",
+      "score": 7,
+      "harga": 1605,
+      "entry_lo": 1550,
+      "entry_hi": 1600,
+      "tp1": 1750,
+      "tp2": 1850,
+      "cl": 1500
+    },
+    {
+      "kode": "TLKM",
+      "nama": "Telkom Indonesia",
+      "tier": "T1",
+      "score": 7,
+      "harga": 2790,
+      "entry_lo": 2700,
+      "entry_hi": 2800,
+      "tp1": 3000,
+      "tp2": 3250,
+      "cl": 2600
+    },
+    {
+      "kode": "BIPI",
+      "nama": "Hindia Energi Tbk",
+      "tier": "T1",
+      "score": 7,
+      "harga": 150,
+      "entry_lo": 150,
+      "entry_hi": 150,
+      "tp1": 160,
+      "tp2": 170,
+      "cl": 140
+    }
+  ]
+}
