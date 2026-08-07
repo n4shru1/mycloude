@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-07",
+  "label": "Jumat 7 Agustus 2026",
+  "stocks": [
+    {
+      "kode": "ANTM",
+      "nama": "Aneka Tambang",
+      "tier": "T1",
+      "score": 8,
+      "harga": 3080,
+      "entry_lo": 3000,
+      "entry_hi": 3100,
+      "tp1": 3350,
+      "tp2": 3550,
+      "cl": 2900
+    },
+    {
+      "kode": "BUMI",
+      "nama": "Bumi Resources Tbk",
+      "tier": "T1",
+      "score": 8,
+      "harga": 179,
+      "entry_lo": 170,
+      "entry_hi": 180,
+      "tp1": 190,
+      "tp2": 210,
+      "cl": 170
+    },
+    {
+      "kode": "CUAN",
+      "nama": "Petrindo Jaya Kreasi",
+      "tier": "T1",
+      "score": 8,
+      "harga": 720,
+      "entry_lo": 700,
+      "entry_hi": 700,
+      "tp1": 800,
+      "tp2": 850,
+      "cl": 650
+    }
+  ]
+}
