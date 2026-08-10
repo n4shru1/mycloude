@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-10",
+  "label": "Senin 10 Agustus 2026",
+  "stocks": [
+    {
+      "kode": "TPIA",
+      "nama": "Chandra Asri Pacific",
+      "tier": "T1",
+      "score": 8,
+      "harga": 2120,
+      "entry_lo": 2050,
+      "entry_hi": 2100,
+      "tp1": 2300,
+      "tp2": 2450,
+      "cl": 2000
+    },
+    {
+      "kode": "ANTM",
+      "nama": "Aneka Tambang",
+      "tier": "T1",
+      "score": 7,
+      "harga": 3140,
+      "entry_lo": 3050,
+      "entry_hi": 3150,
+      "tp1": 3400,
+      "tp2": 3650,
+      "cl": 2950
+    },
+    {
+      "kode": "ASPR",
+      "nama": "Asia Pramulia Tbk",
+      "tier": "T1",
+      "score": 7,
+      "harga": 156,
+      "entry_lo": 150,
+      "entry_hi": 160,
+      "tp1": 170,
+      "tp2": 180,
+      "cl": 150
+    }
+  ]
+}
