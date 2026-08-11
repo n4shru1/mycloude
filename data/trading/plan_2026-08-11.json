@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-11",
+  "label": "Selasa 11 Agustus 2026",
+  "stocks": [
+    {
+      "kode": "ANTM",
+      "nama": "Aneka Tambang",
+      "tier": "T2",
+      "score": 5,
+      "harga": 3090,
+      "entry_lo": 3000,
+      "entry_hi": 3100,
+      "tp1": 3350,
+      "tp2": 3600,
+      "cl": 2850
+    },
+    {
+      "kode": "CUAN",
+      "nama": "Petrindo Jaya Kreasi",
+      "tier": "T2",
+      "score": 5,
+      "harga": 720,
+      "entry_lo": 700,
+      "entry_hi": 700,
+      "tp1": 800,
+      "tp2": 850,
+      "cl": 650
+    },
+    {
+      "kode": "ASPR",
+      "nama": "Asia Pramulia Tbk",
+      "tier": "T2",
+      "score": 5,
+      "harga": 151,
+      "entry_lo": 150,
+      "entry_hi": 150,
+      "tp1": 160,
+      "tp2": 180,
+      "cl": 140
+    }
+  ]
+}
