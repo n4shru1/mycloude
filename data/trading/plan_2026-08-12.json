@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-12",
+  "label": "Rabu 12 Agustus 2026",
+  "stocks": [
+    {
+      "kode": "CUAN",
+      "nama": "Petrindo Jaya Kreasi",
+      "tier": "T2",
+      "score": 5,
+      "harga": 870,
+      "entry_lo": 850,
+      "entry_hi": 850,
+      "tp1": 950,
+      "tp2": 1000,
+      "cl": 800
+    },
+    {
+      "kode": "ASPR",
+      "nama": "Asia Pramulia Tbk",
+      "tier": "T2",
+      "score": 5,
+      "harga": 151,
+      "entry_lo": 150,
+      "entry_hi": 150,
+      "tp1": 160,
+      "tp2": 180,
+      "cl": 140
+    },
+    {
+      "kode": "TPIA",
+      "nama": "Chandra Asri Pacific",
+      "tier": "T3",
+      "score": 4,
+      "harga": 2160,
+      "entry_lo": 2050,
+      "entry_hi": 2150,
+      "tp1": 2300,
+      "tp2": 2450,
+      "cl": 2000
+    }
+  ]
+}
