@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-19",
+  "label": "Rabu 19 Agustus 2026",
+  "stocks": [
+    {
+      "kode": "ADMR",
+      "nama": "Alamtri Minerals",
+      "tier": "T2",
+      "score": 6,
+      "harga": 1635,
+      "entry_lo": 1600,
+      "entry_hi": 1650,
+      "tp1": 1750,
+      "tp2": 1900,
+      "cl": 1500
+    },
+    {
+      "kode": "BUMI",
+      "nama": "Bumi Resources Tbk",
+      "tier": "T2",
+      "score": 6,
+      "harga": 182,
+      "entry_lo": 180,
+      "entry_hi": 180,
+      "tp1": 200,
+      "tp2": 210,
+      "cl": 170
+    },
+    {
+      "kode": "BIPI",
+      "nama": "Hindia Energi Tbk",
+      "tier": "T2",
+      "score": 6,
+      "harga": 150,
+      "entry_lo": 150,
+      "entry_hi": 150,
+      "tp1": 160,
+      "tp2": 180,
+      "cl": 140
+    }
+  ]
+}
