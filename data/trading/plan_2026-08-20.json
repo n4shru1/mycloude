@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-20",
+  "label": "Kamis 20 Agustus 2026",
+  "stocks": [
+    {
+      "kode": "ANTM",
+      "nama": "Aneka Tambang",
+      "tier": "T1",
+      "score": 7,
+      "harga": 3140,
+      "entry_lo": 3050,
+      "entry_hi": 3150,
+      "tp1": 3400,
+      "tp2": 3650,
+      "cl": 2950
+    },
+    {
+      "kode": "BUMI",
+      "nama": "Bumi Resources Tbk",
+      "tier": "T1",
+      "score": 7,
+      "harga": 190,
+      "entry_lo": 180,
+      "entry_hi": 190,
+      "tp1": 210,
+      "tp2": 220,
+      "cl": 180
+    },
+    {
+      "kode": "BIPI",
+      "nama": "Hindia Energi Tbk",
+      "tier": "T2",
+      "score": 6,
+      "harga": 152,
+      "entry_lo": 150,
+      "entry_hi": 150,
+      "tp1": 160,
+      "tp2": 180,
+      "cl": 140
+    }
+  ]
+}
