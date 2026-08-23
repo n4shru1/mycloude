@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-23",
+  "label": "Minggu 23 Agustus 2026",
+  "stocks": [
+    {
+      "kode": "BUMI",
+      "nama": "Bumi Resources Tbk",
+      "tier": "T1",
+      "score": 8,
+      "harga": 196,
+      "entry_lo": 190,
+      "entry_hi": 200,
+      "tp1": 210,
+      "tp2": 230,
+      "cl": 180
+    },
+    {
+      "kode": "DEWA",
+      "nama": "Darma Henwa Tbk",
+      "tier": "T1",
+      "score": 7,
+      "harga": 458,
+      "entry_lo": 450,
+      "entry_hi": 450,
+      "tp1": 500,
+      "tp2": 525,
+      "cl": 425
+    },
+    {
+      "kode": "BIPI",
+      "nama": "Hindia Energi Tbk",
+      "tier": "T1",
+      "score": 7,
+      "harga": 152,
+      "entry_lo": 150,
+      "entry_hi": 150,
+      "tp1": 160,
+      "tp2": 180,
+      "cl": 140
+    }
+  ]
+}
