@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-02",
+  "label": "Rabu 2 September 2026",
+  "stocks": [
+    {
+      "kode": "DEWA",
+      "nama": "Darma Henwa Tbk",
+      "tier": "T2",
+      "score": 6,
+      "harga": 452,
+      "entry_lo": 450,
+      "entry_hi": 450,
+      "tp1": 500,
+      "tp2": 525,
+      "cl": 425
+    },
+    {
+      "kode": "BUMI",
+      "nama": "Bumi Resources Tbk",
+      "tier": "T2",
+      "score": 6,
+      "harga": 206,
+      "entry_lo": 200,
+      "entry_hi": 200,
+      "tp1": 225,
+      "tp2": 250,
+      "cl": 200
+    },
+    {
+      "kode": "CUAN",
+      "nama": "Petrindo Jaya Kreasi",
+      "tier": "T2",
+      "score": 6,
+      "harga": 905,
+      "entry_lo": 900,
+      "entry_hi": 900,
+      "tp1": 1000,
+      "tp2": 1050,
+      "cl": 850
+    }
+  ]
+}
