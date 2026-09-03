@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-03",
+  "label": "Kamis 3 September 2026",
+  "stocks": [
+    {
+      "kode": "ANTM",
+      "nama": "Aneka Tambang",
+      "tier": "T2",
+      "score": 6,
+      "harga": 3150,
+      "entry_lo": 3050,
+      "entry_hi": 3150,
+      "tp1": 3400,
+      "tp2": 3700,
+      "cl": 2950
+    },
+    {
+      "kode": "CUAN",
+      "nama": "Petrindo Jaya Kreasi",
+      "tier": "T2",
+      "score": 6,
+      "harga": 910,
+      "entry_lo": 900,
+      "entry_hi": 900,
+      "tp1": 1000,
+      "tp2": 1050,
+      "cl": 850
+    },
+    {
+      "kode": "TPIA",
+      "nama": "Chandra Asri Pacific",
+      "tier": "T2",
+      "score": 5,
+      "harga": 2010,
+      "entry_lo": 1950,
+      "entry_hi": 2000,
+      "tp1": 2150,
+      "tp2": 2350,
+      "cl": 1850
+    }
+  ]
+}
