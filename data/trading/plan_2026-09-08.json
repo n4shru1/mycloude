@@ -3,39 +3,39 @@
   "label": "Selasa 8 September 2026",
   "stocks": [
     {
-      "kode": "ADMR",
-      "nama": "Alamtri Minerals",
-      "tier": "T2",
-      "score": 5,
-      "harga": 1645,
-      "entry_lo": 1600,
-      "entry_hi": 1650,
-      "tp1": 1800,
-      "tp2": 1900,
-      "cl": 1550
-    },
-    {
       "kode": "TLKM",
       "nama": "Telkom Indonesia",
-      "tier": "T2",
-      "score": 5,
-      "harga": 2610,
+      "tier": "T1",
+      "score": 7,
+      "harga": 2650,
       "entry_lo": 2550,
-      "entry_hi": 2600,
-      "tp1": 2800,
+      "entry_hi": 2650,
+      "tp1": 2850,
       "tp2": 3050,
-      "cl": 2450
+      "cl": 2500
+    },
+    {
+      "kode": "BIPI",
+      "nama": "Hindia Energi Tbk",
+      "tier": "T1",
+      "score": 7,
+      "harga": 150,
+      "entry_lo": 150,
+      "entry_hi": 150,
+      "tp1": 160,
+      "tp2": 170,
+      "cl": 140
     },
     {
       "kode": "BUMI",
       "nama": "Bumi Resources Tbk",
       "tier": "T2",
       "score": 5,
-      "harga": 220,
+      "harga": 226,
       "entry_lo": 225,
       "entry_hi": 225,
       "tp1": 250,
-      "tp2": 250,
+      "tp2": 275,
       "cl": 200
     }
   ]
