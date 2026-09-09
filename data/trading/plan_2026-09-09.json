@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-09",
+  "label": "Rabu 9 September 2026",
+  "stocks": [
+    {
+      "kode": "BIPI",
+      "nama": "Hindia Energi Tbk",
+      "tier": "T1",
+      "score": 9,
+      "harga": 158,
+      "entry_lo": 150,
+      "entry_hi": 160,
+      "tp1": 170,
+      "tp2": 180,
+      "cl": 150
+    },
+    {
+      "kode": "ANTM",
+      "nama": "Aneka Tambang",
+      "tier": "T1",
+      "score": 8,
+      "harga": 3200,
+      "entry_lo": 3100,
+      "entry_hi": 3200,
+      "tp1": 3450,
+      "tp2": 3700,
+      "cl": 3000
+    },
+    {
+      "kode": "ADMR",
+      "nama": "Alamtri Minerals",
+      "tier": "T2",
+      "score": 5,
+      "harga": 1675,
+      "entry_lo": 1600,
+      "entry_hi": 1700,
+      "tp1": 1800,
+      "tp2": 1950,
+      "cl": 1550
+    }
+  ]
+}
