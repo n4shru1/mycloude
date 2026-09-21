@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-21",
+  "label": "Senin 21 September 2026",
+  "stocks": [
+    {
+      "kode": "ANTM",
+      "nama": "Aneka Tambang",
+      "tier": "T2",
+      "score": 6,
+      "harga": 3340,
+      "entry_lo": 3250,
+      "entry_hi": 3350,
+      "tp1": 3600,
+      "tp2": 3900,
+      "cl": 3100
+    },
+    {
+      "kode": "CUAN",
+      "nama": "Petrindo Jaya Kreasi",
+      "tier": "T2",
+      "score": 6,
+      "harga": 925,
+      "entry_lo": 900,
+      "entry_hi": 900,
+      "tp1": 1000,
+      "tp2": 1100,
+      "cl": 850
+    },
+    {
+      "kode": "ADMR",
+      "nama": "Alamtri Minerals",
+      "tier": "T2",
+      "score": 5,
+      "harga": 1590,
+      "entry_lo": 1550,
+      "entry_hi": 1600,
+      "tp1": 1700,
+      "tp2": 1850,
+      "cl": 1500
+    }
+  ]
+}
