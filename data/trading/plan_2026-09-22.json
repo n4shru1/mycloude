@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-22",
+  "label": "Selasa 22 September 2026",
+  "stocks": [
+    {
+      "kode": "BIPI",
+      "nama": "Hindia Energi Tbk",
+      "tier": "T1",
+      "score": 8,
+      "harga": 150,
+      "entry_lo": 150,
+      "entry_hi": 150,
+      "tp1": 160,
+      "tp2": 170,
+      "cl": 140
+    },
+    {
+      "kode": "CUAN",
+      "nama": "Petrindo Jaya Kreasi",
+      "tier": "T2",
+      "score": 6,
+      "harga": 930,
+      "entry_lo": 900,
+      "entry_hi": 950,
+      "tp1": 1000,
+      "tp2": 1100,
+      "cl": 850
+    },
+    {
+      "kode": "ANTM",
+      "nama": "Aneka Tambang",
+      "tier": "T2",
+      "score": 5,
+      "harga": 3240,
+      "entry_lo": 3150,
+      "entry_hi": 3250,
+      "tp1": 3500,
+      "tp2": 3800,
+      "cl": 3000
+    }
+  ]
+}
