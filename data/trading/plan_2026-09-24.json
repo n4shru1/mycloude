@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-24",
+  "label": "Kamis 24 September 2026",
+  "stocks": [
+    {
+      "kode": "CUAN",
+      "nama": "Petrindo Jaya Kreasi",
+      "tier": "T1",
+      "score": 7,
+      "harga": 960,
+      "entry_lo": 950,
+      "entry_hi": 950,
+      "tp1": 1050,
+      "tp2": 1100,
+      "cl": 900
+    },
+    {
+      "kode": "ASPR",
+      "nama": "Asia Pramulia Tbk",
+      "tier": "T1",
+      "score": 7,
+      "harga": 147,
+      "entry_lo": 140,
+      "entry_hi": 150,
+      "tp1": 160,
+      "tp2": 170,
+      "cl": 140
+    },
+    {
+      "kode": "BIPI",
+      "nama": "Hindia Energi Tbk",
+      "tier": "T2",
+      "score": 6,
+      "harga": 150,
+      "entry_lo": 150,
+      "entry_hi": 150,
+      "tp1": 160,
+      "tp2": 180,
+      "cl": 140
+    }
+  ]
+}
