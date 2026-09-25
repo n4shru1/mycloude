@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-25",
+  "label": "Jumat 25 September 2026",
+  "stocks": [
+    {
+      "kode": "ANTM",
+      "nama": "Aneka Tambang",
+      "tier": "T2",
+      "score": 5,
+      "harga": 3270,
+      "entry_lo": 3150,
+      "entry_hi": 3250,
+      "tp1": 3550,
+      "tp2": 3850,
+      "cl": 3050
+    },
+    {
+      "kode": "CUAN",
+      "nama": "Petrindo Jaya Kreasi",
+      "tier": "T2",
+      "score": 5,
+      "harga": 940,
+      "entry_lo": 900,
+      "entry_hi": 950,
+      "tp1": 1000,
+      "tp2": 1100,
+      "cl": 850
+    },
+    {
+      "kode": "DEWA",
+      "nama": "Darma Henwa Tbk",
+      "tier": "T3",
+      "score": 4,
+      "harga": 364,
+      "entry_lo": 350,
+      "entry_hi": 350,
+      "tp1": 400,
+      "tp2": 425,
+      "cl": 325
+    }
+  ]
+}
