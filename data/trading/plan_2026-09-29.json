@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-29",
+  "label": "Selasa 29 September 2026",
+  "stocks": [
+    {
+      "kode": "CUAN",
+      "nama": "Petrindo Jaya Kreasi",
+      "tier": "T3",
+      "score": 3,
+      "harga": 910,
+      "entry_lo": 850,
+      "entry_hi": 900,
+      "tp1": 950,
+      "tp2": 1050,
+      "cl": 850
+    }
+  ]
+}
