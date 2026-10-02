@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-02",
+  "label": "Jumat 2 Oktober 2026",
+  "stocks": [
+    {
+      "kode": "ANTM",
+      "nama": "Aneka Tambang",
+      "tier": "T3",
+      "score": 4,
+      "harga": 3120,
+      "entry_lo": 3000,
+      "entry_hi": 3100,
+      "tp1": 3350,
+      "tp2": 3550,
+      "cl": 2850
+    },
+    {
+      "kode": "ASPR",
+      "nama": "Asia Pramulia Tbk",
+      "tier": "T3",
+      "score": 4,
+      "harga": 145,
+      "entry_lo": 140,
+      "entry_hi": 140,
+      "tp1": 160,
+      "tp2": 170,
+      "cl": 130
+    },
+    {
+      "kode": "TPIA",
+      "nama": "Chandra Asri Pacific",
+      "tier": "T3",
+      "score": 3,
+      "harga": 1730,
+      "entry_lo": 1650,
+      "entry_hi": 1700,
+      "tp1": 1850,
+      "tp2": 1950,
+      "cl": 1600
+    }
+  ]
+}
