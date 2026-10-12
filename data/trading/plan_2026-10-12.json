@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-12",
+  "label": "Senin 12 Oktober 2026",
+  "stocks": [
+    {
+      "kode": "ASPR",
+      "nama": "Asia Pramulia Tbk",
+      "tier": "T1",
+      "score": 8,
+      "harga": 157,
+      "entry_lo": 150,
+      "entry_hi": 160,
+      "tp1": 170,
+      "tp2": 180,
+      "cl": 150
+    },
+    {
+      "kode": "DEWA",
+      "nama": "Darma Henwa Tbk",
+      "tier": "T3",
+      "score": 4,
+      "harga": 366,
+      "entry_lo": 350,
+      "entry_hi": 350,
+      "tp1": 400,
+      "tp2": 425,
+      "cl": 325
+    },
+    {
+      "kode": "ADMR",
+      "nama": "Alamtri Minerals",
+      "tier": "T3",
+      "score": 4,
+      "harga": 1520,
+      "entry_lo": 1450,
+      "entry_hi": 1500,
+      "tp1": 1650,
+      "tp2": 1750,
+      "cl": 1400
+    }
+  ]
+}
