@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-13",
+  "label": "Selasa 13 Oktober 2026",
+  "stocks": [
+    {
+      "kode": "ASPR",
+      "nama": "Asia Pramulia Tbk",
+      "tier": "T1",
+      "score": 7,
+      "harga": 160,
+      "entry_lo": 160,
+      "entry_hi": 160,
+      "tp1": 170,
+      "tp2": 190,
+      "cl": 150
+    },
+    {
+      "kode": "TLKM",
+      "nama": "Telkom Indonesia",
+      "tier": "T3",
+      "score": 3,
+      "harga": 2220,
+      "entry_lo": 2150,
+      "entry_hi": 2200,
+      "tp1": 2400,
+      "tp2": 2550,
+      "cl": 2050
+    },
+    {
+      "kode": "BUMI",
+      "nama": "Bumi Resources Tbk",
+      "tier": "T3",
+      "score": 3,
+      "harga": 166,
+      "entry_lo": 160,
+      "entry_hi": 160,
+      "tp1": 180,
+      "tp2": 190,
+      "cl": 150
+    }
+  ]
+}
