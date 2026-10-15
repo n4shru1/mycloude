@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-15",
+  "label": "Kamis 15 Oktober 2026",
+  "stocks": [
+    {
+      "kode": "ADMR",
+      "nama": "Alamtri Minerals",
+      "tier": "T3",
+      "score": 4,
+      "harga": 1410,
+      "entry_lo": 1350,
+      "entry_hi": 1400,
+      "tp1": 1500,
+      "tp2": 1600,
+      "cl": 1300
+    },
+    {
+      "kode": "ASPR",
+      "nama": "Asia Pramulia Tbk",
+      "tier": "T3",
+      "score": 4,
+      "harga": 156,
+      "entry_lo": 150,
+      "entry_hi": 150,
+      "tp1": 170,
+      "tp2": 180,
+      "cl": 140
+    }
+  ]
+}
