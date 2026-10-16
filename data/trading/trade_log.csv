@@ -204,3 +204,5 @@ tanggal,kode,nama,tier,score,entry,tp1,tp2,cl,close,high,status,pnl_pct,max_pnl_
 2026-10-14,ASPR,Asia Pramulia Tbk,T2,6,150,170,180,150,156,163,TRAIL,4.0,8.67,1
 2026-10-15,ADMR,Alamtri Minerals,T3,4,1350,1500,1600,1300,1365,1405,TRAIL,1.11,4.07,1
 2026-10-15,ASPR,Asia Pramulia Tbk,T3,4,150,170,180,140,148,157,TRAIL,-1.33,4.67,1
+2026-10-16,ADMR,Alamtri Minerals,T3,4,1300,1450,1550,1250,1165,1200,LOSS,-10.38,-7.69,1
+2026-10-16,ASPR,Asia Pramulia Tbk,T3,4,140,160,170,140,126,140,LOSS,-10.0,0.0,1
