@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-19",
+  "label": "Senin 19 Oktober 2026",
+  "stocks": [
+    {
+      "kode": "ANTM",
+      "nama": "Aneka Tambang",
+      "tier": "T3",
+      "score": 3,
+      "harga": 2550,
+      "entry_lo": 2450,
+      "entry_hi": 2500,
+      "tp1": 2750,
+      "tp2": 2900,
+      "cl": 2350
+    }
+  ]
+}
