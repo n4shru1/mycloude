@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-20",
+  "label": "Selasa 20 Oktober 2026",
+  "stocks": [
+    {
+      "kode": "ASPR",
+      "nama": "Asia Pramulia Tbk",
+      "tier": "T3",
+      "score": 4,
+      "harga": 121,
+      "entry_lo": 120,
+      "entry_hi": 120,
+      "tp1": 130,
+      "tp2": 140,
+      "cl": 110
+    },
+    {
+      "kode": "ANTM",
+      "nama": "Aneka Tambang",
+      "tier": "T3",
+      "score": 3,
+      "harga": 2480,
+      "entry_lo": 2400,
+      "entry_hi": 2450,
+      "tp1": 2650,
+      "tp2": 2850,
+      "cl": 2300
+    }
+  ]
+}
