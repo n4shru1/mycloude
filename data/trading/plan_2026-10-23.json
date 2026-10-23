@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-23",
+  "label": "Jumat 23 Oktober 2026",
+  "stocks": [
+    {
+      "kode": "ASPR",
+      "nama": "Asia Pramulia Tbk",
+      "tier": "T2",
+      "score": 6,
+      "harga": 154,
+      "entry_lo": 150,
+      "entry_hi": 150,
+      "tp1": 170,
+      "tp2": 180,
+      "cl": 140
+    },
+    {
+      "kode": "TPIA",
+      "nama": "Chandra Asri Pacific",
+      "tier": "T2",
+      "score": 5,
+      "harga": 1340,
+      "entry_lo": 1300,
+      "entry_hi": 1350,
+      "tp1": 1450,
+      "tp2": 1550,
+      "cl": 1250
+    },
+    {
+      "kode": "BIPI",
+      "nama": "Hindia Energi Tbk",
+      "tier": "T2",
+      "score": 5,
+      "harga": 93,
+      "entry_lo": 90,
+      "entry_hi": 95,
+      "tp1": 100,
+      "tp2": 110,
+      "cl": 85
+    }
+  ]
+}
