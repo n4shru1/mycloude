@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-28",
+  "label": "Rabu 28 Oktober 2026",
+  "stocks": [
+    {
+      "kode": "TPIA",
+      "nama": "Chandra Asri Pacific",
+      "tier": "T2",
+      "score": 5,
+      "harga": 1360,
+      "entry_lo": 1300,
+      "entry_hi": 1350,
+      "tp1": 1450,
+      "tp2": 1600,
+      "cl": 1250
+    },
+    {
+      "kode": "ASPR",
+      "nama": "Asia Pramulia Tbk",
+      "tier": "T3",
+      "score": 4,
+      "harga": 151,
+      "entry_lo": 140,
+      "entry_hi": 150,
+      "tp1": 160,
+      "tp2": 170,
+      "cl": 140
+    },
+    {
+      "kode": "TLKM",
+      "nama": "Telkom Indonesia",
+      "tier": "T3",
+      "score": 3,
+      "harga": 2140,
+      "entry_lo": 2050,
+      "entry_hi": 2100,
+      "tp1": 2300,
+      "tp2": 2450,
+      "cl": 1950
+    }
+  ]
+}
