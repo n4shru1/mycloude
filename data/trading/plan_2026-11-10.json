@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-10",
+  "label": "Selasa 10 November 2026",
+  "stocks": [
+    {
+      "kode": "ASPR",
+      "nama": "Asia Pramulia Tbk",
+      "tier": "T1",
+      "score": 7,
+      "harga": 160,
+      "entry_lo": 160,
+      "entry_hi": 160,
+      "tp1": 170,
+      "tp2": 190,
+      "cl": 150
+    },
+    {
+      "kode": "ADMR",
+      "nama": "Alamtri Minerals",
+      "tier": "T2",
+      "score": 5,
+      "harga": 1340,
+      "entry_lo": 1300,
+      "entry_hi": 1350,
+      "tp1": 1450,
+      "tp2": 1550,
+      "cl": 1250
+    },
+    {
+      "kode": "ANTM",
+      "nama": "Aneka Tambang",
+      "tier": "T2",
+      "score": 5,
+      "harga": 2800,
+      "entry_lo": 2700,
+      "entry_hi": 2800,
+      "tp1": 3000,
+      "tp2": 3300,
+      "cl": 2600
+    }
+  ]
+}
