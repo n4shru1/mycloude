@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-12",
+  "label": "Kamis 12 November 2026",
+  "stocks": [
+    {
+      "kode": "ASPR",
+      "nama": "Asia Pramulia Tbk",
+      "tier": "T2",
+      "score": 6,
+      "harga": 170,
+      "entry_lo": 160,
+      "entry_hi": 170,
+      "tp1": 180,
+      "tp2": 200,
+      "cl": 160
+    },
+    {
+      "kode": "DEWA",
+      "nama": "Darma Henwa Tbk",
+      "tier": "T2",
+      "score": 5,
+      "harga": 254,
+      "entry_lo": 250,
+      "entry_hi": 250,
+      "tp1": 275,
+      "tp2": 300,
+      "cl": 225
+    },
+    {
+      "kode": "TPIA",
+      "nama": "Chandra Asri Pacific",
+      "tier": "T3",
+      "score": 4,
+      "harga": 1290,
+      "entry_lo": 1250,
+      "entry_hi": 1300,
+      "tp1": 1400,
+      "tp2": 1450,
+      "cl": 1200
+    }
+  ]
+}
