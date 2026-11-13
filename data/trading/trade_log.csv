@@ -254,3 +254,6 @@ tanggal,kode,nama,tier,score,entry,tp1,tp2,cl,close,high,status,pnl_pct,max_pnl_
 2026-11-12,ASPR,Asia Pramulia Tbk,T2,6,160,180,200,160,172,173,TRAIL,7.5,8.12,1
 2026-11-12,DEWA,Darma Henwa Tbk,T2,5,250,275,300,225,258,262,TRAIL,3.2,4.8,1
 2026-11-12,TPIA,Chandra Asri Pacific,T3,4,1250,1400,1450,1200,1275,1315,TRAIL,2.0,5.2,1
+2026-11-13,DEWA,Darma Henwa Tbk,T2,6,250,275,300,250,262,274,TRAIL,4.8,9.6,1
+2026-11-13,BUMI,Bumi Resources Tbk,T2,6,120,140,150,120,136,138,TRAIL,13.33,15.0,1
+2026-11-13,BIPI,Hindia Energi Tbk,T2,6,85,95,100,80,88,90,TRAIL,3.53,5.88,1
