@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-13",
+  "label": "Jumat 13 November 2026",
+  "stocks": [
+    {
+      "kode": "DEWA",
+      "nama": "Darma Henwa Tbk",
+      "tier": "T2",
+      "score": 6,
+      "harga": 262,
+      "entry_lo": 250,
+      "entry_hi": 250,
+      "tp1": 275,
+      "tp2": 300,
+      "cl": 250
+    },
+    {
+      "kode": "BUMI",
+      "nama": "Bumi Resources Tbk",
+      "tier": "T2",
+      "score": 6,
+      "harga": 128,
+      "entry_lo": 120,
+      "entry_hi": 130,
+      "tp1": 140,
+      "tp2": 150,
+      "cl": 120
+    },
+    {
+      "kode": "BIPI",
+      "nama": "Hindia Energi Tbk",
+      "tier": "T2",
+      "score": 6,
+      "harga": 86,
+      "entry_lo": 85,
+      "entry_hi": 85,
+      "tp1": 95,
+      "tp2": 100,
+      "cl": 80
+    }
+  ]
+}
