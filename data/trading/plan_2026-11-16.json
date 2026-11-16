@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-16",
+  "label": "Senin 16 November 2026",
+  "stocks": [
+    {
+      "kode": "BUMI",
+      "nama": "Bumi Resources Tbk",
+      "tier": "T1",
+      "score": 7,
+      "harga": 136,
+      "entry_lo": 130,
+      "entry_hi": 140,
+      "tp1": 150,
+      "tp2": 160,
+      "cl": 130
+    },
+    {
+      "kode": "BIPI",
+      "nama": "Hindia Energi Tbk",
+      "tier": "T2",
+      "score": 6,
+      "harga": 88,
+      "entry_lo": 85,
+      "entry_hi": 90,
+      "tp1": 95,
+      "tp2": 105,
+      "cl": 80
+    },
+    {
+      "kode": "CUAN",
+      "nama": "Petrindo Jaya Kreasi",
+      "tier": "T2",
+      "score": 6,
+      "harga": 414,
+      "entry_lo": 400,
+      "entry_hi": 425,
+      "tp1": 450,
+      "tp2": 475,
+      "cl": 375
+    }
+  ]
+}
