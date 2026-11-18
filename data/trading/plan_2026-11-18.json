@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-18",
+  "label": "Rabu 18 November 2026",
+  "stocks": [
+    {
+      "kode": "TLKM",
+      "nama": "Telkom Indonesia",
+      "tier": "T2",
+      "score": 5,
+      "harga": 2210,
+      "entry_lo": 2150,
+      "entry_hi": 2200,
+      "tp1": 2400,
+      "tp2": 2600,
+      "cl": 2050
+    },
+    {
+      "kode": "ASPR",
+      "nama": "Asia Pramulia Tbk",
+      "tier": "T2",
+      "score": 5,
+      "harga": 181,
+      "entry_lo": 180,
+      "entry_hi": 180,
+      "tp1": 200,
+      "tp2": 210,
+      "cl": 170
+    },
+    {
+      "kode": "ANTM",
+      "nama": "Aneka Tambang",
+      "tier": "T3",
+      "score": 4,
+      "harga": 2720,
+      "entry_lo": 2600,
+      "entry_hi": 2700,
+      "tp1": 2900,
+      "tp2": 3100,
+      "cl": 2500
+    }
+  ]
+}
