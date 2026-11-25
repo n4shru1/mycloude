@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-25",
+  "label": "Rabu 25 November 2026",
+  "stocks": [
+    {
+      "kode": "ASPR",
+      "nama": "Asia Pramulia Tbk",
+      "tier": "T2",
+      "score": 6,
+      "harga": 192,
+      "entry_lo": 190,
+      "entry_hi": 190,
+      "tp1": 210,
+      "tp2": 220,
+      "cl": 180
+    },
+    {
+      "kode": "DEWA",
+      "nama": "Darma Henwa Tbk",
+      "tier": "T2",
+      "score": 5,
+      "harga": 240,
+      "entry_lo": 225,
+      "entry_hi": 250,
+      "tp1": 250,
+      "tp2": 275,
+      "cl": 225
+    },
+    {
+      "kode": "BUMI",
+      "nama": "Bumi Resources Tbk",
+      "tier": "T2",
+      "score": 5,
+      "harga": 128,
+      "entry_lo": 120,
+      "entry_hi": 130,
+      "tp1": 140,
+      "tp2": 150,
+      "cl": 120
+    }
+  ]
+}
