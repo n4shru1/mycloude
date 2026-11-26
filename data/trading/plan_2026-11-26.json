@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-26",
+  "label": "Kamis 26 November 2026",
+  "stocks": [
+    {
+      "kode": "BUMI",
+      "nama": "Bumi Resources Tbk",
+      "tier": "T2",
+      "score": 5,
+      "harga": 130,
+      "entry_lo": 130,
+      "entry_hi": 130,
+      "tp1": 140,
+      "tp2": 150,
+      "cl": 120
+    },
+    {
+      "kode": "ASPR",
+      "nama": "Asia Pramulia Tbk",
+      "tier": "T3",
+      "score": 4,
+      "harga": 182,
+      "entry_lo": 170,
+      "entry_hi": 180,
+      "tp1": 190,
+      "tp2": 210,
+      "cl": 170
+    }
+  ]
+}
