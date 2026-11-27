@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-27",
+  "label": "Jumat 27 November 2026",
+  "stocks": [
+    {
+      "kode": "BUMI",
+      "nama": "Bumi Resources Tbk",
+      "tier": "T2",
+      "score": 5,
+      "harga": 133,
+      "entry_lo": 130,
+      "entry_hi": 130,
+      "tp1": 140,
+      "tp2": 160,
+      "cl": 120
+    },
+    {
+      "kode": "ANTM",
+      "nama": "Aneka Tambang",
+      "tier": "T3",
+      "score": 4,
+      "harga": 2700,
+      "entry_lo": 2600,
+      "entry_hi": 2650,
+      "tp1": 2900,
+      "tp2": 3100,
+      "cl": 2500
+    },
+    {
+      "kode": "BIPI",
+      "nama": "Hindia Energi Tbk",
+      "tier": "T3",
+      "score": 4,
+      "harga": 82,
+      "entry_lo": 80,
+      "entry_hi": 80,
+      "tp1": 90,
+      "tp2": 95,
+      "cl": 75
+    }
+  ]
+}
